@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('fonts/FONTSPRINGDEMO-ProximaNovaBold.woff2') format('woff2'),
+        url('fonts/FONTSPRINGDEMO-ProximaNovaBold.woff') format('woff'),
+        url('fonts/FONTSPRINGDEMO-ProximaNovaBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('fonts/FONTSPRINGDEMO-ProximaNovaRegular.woff2') format('woff2'),
+        url('fonts/FONTSPRINGDEMO-ProximaNovaRegular.woff') format('woff'),
+        url('fonts/FONTSPRINGDEMO-ProximaNovaRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --color-dark: #272726;
+    --color-blue: #00557B;
+    --color-green: #016554;
+    --color-orange: #ED6E1F;
+    --color-grey: #E8E3DA;
+    --color-light: #F7F4F0;    
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Proxima Nova';
+}
+
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+h2, .h2 {
+    font-size: 2.5rem;
+}
+
+h3, .h3 {
+    font-size: 2.25rem;
+}
+
+h4, .h4 {
+    font-size: 1.75rem;
+}
+
+h5, .h5 {
+    font-size: 1.5rem;
+}
+
+h6, .h6 {
+    font-size: 1.25rem;
+}
+
+/* Typography End */
+
+/* Site Header */
+
+.site-header {
+    background: #222;
+}
+
+/* Site Header End */
