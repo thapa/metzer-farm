@@ -1,22 +1,24 @@
 @font-face {
     font-family: 'Proxima Nova';
-    src: url('fonts/FONTSPRINGDEMO-ProximaNovaBold.woff2') format('woff2'),
-        url('fonts/FONTSPRINGDEMO-ProximaNovaBold.woff') format('woff'),
-        url('fonts/FONTSPRINGDEMO-ProximaNovaBold.ttf') format('truetype');
-    font-weight: bold;
+    src: url('fonts/ProximaNova-Regular.woff2') format('woff2'),
+        url('fonts/ProximaNova-Regular.woff') format('woff'),
+        url('fonts/ProximaNova-Regular.ttf') format('truetype');
+    font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
     font-family: 'Proxima Nova';
-    src: url('fonts/FONTSPRINGDEMO-ProximaNovaRegular.woff2') format('woff2'),
-        url('fonts/FONTSPRINGDEMO-ProximaNovaRegular.woff') format('woff'),
-        url('fonts/FONTSPRINGDEMO-ProximaNovaRegular.ttf') format('truetype');
-    font-weight: normal;
+    src: url('fonts/ProximaNova-Bold.woff2') format('woff2'),
+        url('fonts/ProximaNova-Bold.woff') format('woff'),
+        url('fonts/ProximaNova-Bold.ttf') format('truetype');
+    font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
+
+
 
 :root {
     --color-dark: #272726;
