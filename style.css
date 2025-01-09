@@ -18,13 +18,13 @@
     font-display: swap;
 }
 
-
-
 :root {
     --color-dark: #272726;
     --color-blue: #00557B;
     --color-green: #016554;
+    --color-green-light: #CBE0DD;
     --color-orange: #ED6E1F;
+    --color-orange-light: #FBDBC7;
     --color-grey: #E8E3DA;
     --color-light: #F7F4F0;    
 }
@@ -39,8 +39,18 @@ a {
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+    display: inline-block;
+}
+
+.container {
+    max-width: 1060px;
+}
+
 /* Typography */
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
     font-weight: bold;
 }
 
@@ -66,10 +76,192 @@ h6, .h6 {
 
 /* Typography End */
 
+/* Buttons */
+
+.btn {
+    --bs-btn-color: #fff;
+    --bs-btn-hover-color: var(--color-orange);
+    --bs-btn-bg: var(--color-orange);
+    --bs-btn-border-color: var(--color-orange);
+    --bs-btn-hover-bg: var(--color-orange-light);
+    --bs-btn-hover-border-color: var(--color-orange-light);
+    --bs-btn-font-size: 18px;
+    --bs-btn-line-height: 20px;
+    --bs-btn-padding-x: 20px;
+    --bs-btn-padding-y: 10px;
+    --bs-btn-border-radius: 40px;
+    --bs-btn-font-weight: bold;
+    --bs-border-width: 2px;    
+}
+
+.btn-orange-outline {
+    --bs-btn-color: var(--color-orange);
+    --bs-btn-hover-color: var(--color-orange);
+    --bs-btn-bg: transparent;
+    --bs-btn-hover-bg: var(--color-orange-light);
+    --bs-btn-border-color: var(--color-orange);
+    --bs-btn-hover-border-color: var(--color-orange-light);   
+}
+
+.btn-green {
+    --bs-btn-color: #fff;
+    --bs-btn-hover-color: var(--color-green);
+    --bs-btn-bg: var(--color-green);
+    --bs-btn-hover-bg: var(--color-green-light);
+    --bs-btn-border-color: var(--color-green);
+    --bs-btn-hover-border-color: var(--color-green-light);   
+}
+
+.btn-green-outline {
+    --bs-btn-color: var(--color-green);
+    --bs-btn-hover-color: var(--color-green);
+    --bs-btn-bg: transparent;
+    --bs-btn-hover-bg: var(--color-green-light);
+    --bs-btn-border-color: var(--color-green);
+    --bs-btn-hover-border-color: var(--color-green-light);   
+}
+
+/* Buttons End */
+
 /* Site Header */
 
 .site-header {
-    background: #222;
+    background: rgb(0 0 0 / 80%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    padding: 20px 0;
+}
+
+.site-header .nav-link {
+    --bs-nav-link-color: #fff;
+    --bs-nav-link-hover-color: #fff;
+    --bs-navbar-active-color: #fff;
+    --bs-nav-link-font-size: 15px;
+    --bs-navbar-nav-link-padding-x: 20px;
+    --bs-nav-link-padding-y: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.site-header .nav-link:before {
+    content: "";
+    height: 1px;
+    background: var(--color-orange);
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    left: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.site-header .nav-link:hover:before {
+    width: calc(100% - 40px);
+} 
+
+.header-btns {
+    margin-bottom: 20px;
+}
+
+.header-btns .btn {
+    --bs-btn-font-size: 14px;
+    --bs-btn-line-height: 16px;
+}
+
+.header-btns .btn.btn-orange-outline {
+    --bs-btn-color: #fff;
 }
 
 /* Site Header End */
+
+/* Home Page */
+
+/* Slider */
+.home-slider {
+    --swiper-navigation-size: 24px;
+    --swiper-theme-color: #ffffff;
+}
+
+.home-slider img {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.home-slide-content {
+    height: 100%;
+    padding-bottom: 70px;
+    background: linear-gradient(to bottom,  rgba(255,255,255,0) 30%,rgba(0,0,0,1) 110%);
+}
+
+.home-slide-content h1 {
+    font-weight: normal;
+    color: #fff;
+}
+
+.home-slide-content p {
+    color: #fff;
+}
+
+.home-slide-content-inner {
+    max-width: 600px;
+}
+
+.home-slider-nav {
+    position: absolute;
+    right: 60px;
+    bottom: 60px;
+    width: 125px;
+}
+
+.home-slider .swiper-button-next, 
+.home-slider .swiper-button-prev {
+    width: 45px;
+    height: 45px;
+    border: 3px solid currentColor;
+}
+
+/* Rich Text Box */
+
+.rich-text-box {
+    padding: 60px 0;
+}
+
+.rich-text-box h2 {
+    color: var(--color-green);
+    font-weight: normal;
+}
+
+/* Image Boxes */
+
+.image-boxes {
+    color: #272726;
+    background-color: #EEE8E0;
+    padding: 70px 0;
+}
+
+.image-boxes.with-border {
+    border-top: 23px solid #DDD1C0;
+}
+
+.image-boxes .row {
+    --bs-gutter-x: 100px;
+}
+
+.image-boxes img {
+    margin-bottom: 24px;
+}
+
+.image-boxes h3 {
+    color: #919481;
+}
+
+.image-box-content > *:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+/* Home Page End */
+
