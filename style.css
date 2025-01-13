@@ -263,5 +263,67 @@ h6, .h6 {
     margin-bottom: 20px;
 }
 
+
+/* Image Text Box */
+
+.image-with-text-box {
+    padding: 120px 0;
+    background-color: #fff;
+    color: #272726;
+}
+
+.image-with-text-box .media {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.16);
+}
+
+.image-with-text-box h2 {
+    color: var(--color-green);
+}
+
+.image-with-text-box h5 {
+    margin-bottom: 18px
+}
+
+.image-with-text-box a.btn {
+    margin-top: 30px;
+    max-width: 260px;
+}
+
+.image-with-text-box img.image-badge {
+    top: -50px;
+    right: -60px;
+    width: 190px;
+    height: auto;
+}
+
+@media screen and (min-width: 768px) {
+    
+    .image-with-text-box .row {
+        --bs-gutter-x: 100px;
+    }
+
+    .image-with-text-box .row + .row {
+        margin-top: 100px;
+    }
+}
+
+/* Logo List */
+
+.logo_list-box {
+    padding: 60px 0;
+    background-color: #F7F4F0;
+    color: #919481;
+}
+
+.logo-item {
+    text-align: center
+}
+
+.logo_list-box img {
+    mix-blend-mode: multiply;
+    object-fit: contain;
+    max-width: 80%;
+}
+
 /* Home Page End */
 
