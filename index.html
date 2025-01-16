@@ -19,19 +19,47 @@
         <header class="site-header">
            
             <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid px-5">
+                <div class="container-fluid px-md-5 px-4">
                   <a class="navbar-brand" href="#">
                     <img src="assets/Logo.svg" alt="" width="250" height="" />
                   </a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-contant" aria-controls="navbar-contant" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
+                <div class="nav-drawer d-lg-none d-flex gap-1 align-items-center">
+                  <a href="#" class="icon icon-cart">
+                    <svg width="27" height="24" viewBox="0 0 27 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="
+                    ">
+                                            <path d="M25.584 4.357H8.645C8.50894 4.357 8.37846 4.41105 8.28225 4.50726C8.18605 4.60346 8.132 4.73394 8.132 4.87C8.132 5.00606 8.18605 5.13654 8.28225 5.23275C8.37846 5.32895 8.50894 5.383 8.645 5.383H25.584C25.603 5.38302 25.6218 5.38738 25.6389 5.39577C25.656 5.40416 25.671 5.41634 25.6827 5.43139C25.6944 5.44644 25.7024 5.46396 25.7063 5.48261C25.7102 5.50126 25.7097 5.52055 25.705 5.539L23.578 13.87C23.5711 13.897 23.5553 13.921 23.5332 13.938C23.5111 13.9551 23.4839 13.9642 23.456 13.964H8.269L5.088 1.505C5.05089 1.36034 4.96664 1.23217 4.84858 1.14072C4.73051 1.04927 4.58534 0.999761 4.436 1H1.513C1.37694 1 1.24646 1.05405 1.15025 1.15026C1.05405 1.24646 1 1.37694 1 1.513C1 1.64906 1.05405 1.77954 1.15025 1.87575C1.24646 1.97195 1.37694 2.026 1.513 2.026H4.162L8.035 17.2C8.12441 17.5511 8.32831 17.8624 8.61447 18.0846C8.90062 18.3068 9.25269 18.4273 9.615 18.427H23.68C23.8161 18.427 23.9465 18.373 24.0427 18.2767C24.139 18.1805 24.193 18.0501 24.193 17.914C24.193 17.7779 24.139 17.6475 24.0427 17.5513C23.9465 17.455 23.8161 17.401 23.68 17.401H9.615C9.48062 17.4016 9.34993 17.3571 9.24385 17.2746C9.13778 17.1921 9.06247 17.0764 9.03 16.946L8.53 14.995H23.456C23.7118 14.9952 23.9604 14.9102 24.1625 14.7533C24.3646 14.5965 24.5087 14.3768 24.572 14.129L26.7 5.794C26.7435 5.62397 26.7475 5.44626 26.7117 5.27445C26.6759 5.10263 26.6013 4.94127 26.4937 4.80271C26.386 4.66414 26.248 4.55203 26.0904 4.47495C25.9327 4.39788 25.7595 4.35687 25.584 4.357Z" fill="currentColor"></path>
+                                            <path d="M11.27 19.334C10.8529 19.334 10.4451 19.4577 10.0983 19.6894C9.75149 19.9212 9.48117 20.2506 9.32155 20.636C9.16192 21.0213 9.12014 21.4454 9.20152 21.8545C9.2829 22.2636 9.48375 22.6394 9.7787 22.9343C10.0736 23.2293 10.4495 23.4301 10.8586 23.5115C11.2677 23.5928 11.6917 23.5511 12.0771 23.3915C12.4624 23.2318 12.7918 22.9616 13.0236 22.6147C13.2553 22.2679 13.379 21.8601 13.379 21.443C13.3785 20.8838 13.1561 20.3477 12.7607 19.9523C12.3653 19.5569 11.8292 19.3345 11.27 19.334ZM11.27 22.526C11.0558 22.526 10.8464 22.4625 10.6683 22.3435C10.4902 22.2245 10.3514 22.0553 10.2694 21.8574C10.1875 21.6595 10.166 21.4418 10.2078 21.2317C10.2496 21.0216 10.3527 20.8287 10.5042 20.6772C10.6557 20.5258 10.8486 20.4226 11.0587 20.3808C11.2688 20.3391 11.4865 20.3605 11.6844 20.4425C11.8823 20.5245 12.0515 20.6632 12.1705 20.8413C12.2895 21.0194 12.353 21.2288 12.353 21.443C12.3527 21.7301 12.2385 22.0054 12.0355 22.2085C11.8325 22.4115 11.5571 22.5257 11.27 22.526Z" fill="currentColor"></path>
+                                            <path d="M20.399 19.334C19.9818 19.334 19.5741 19.4577 19.2273 19.6894C18.8805 19.9212 18.6102 20.2506 18.4505 20.636C18.2909 21.0213 18.2491 21.4454 18.3305 21.8545C18.4119 22.2636 18.6127 22.6394 18.9077 22.9343C19.2026 23.2293 19.5784 23.4301 19.9875 23.5115C20.3966 23.5928 20.8207 23.5511 21.206 23.3915C21.5914 23.2318 21.9208 22.9616 22.1526 22.6147C22.3843 22.2679 22.508 21.8601 22.508 21.443C22.5074 20.8838 22.2851 20.3477 21.8897 19.9523C21.4943 19.5569 20.9581 19.3345 20.399 19.334ZM20.399 22.526C20.1848 22.526 19.9754 22.4625 19.7973 22.3435C19.6192 22.2245 19.4804 22.0553 19.3984 21.8574C19.3164 21.6595 19.295 21.4418 19.3368 21.2317C19.3786 21.0216 19.4817 20.8287 19.6332 20.6772C19.7846 20.5258 19.9776 20.4226 20.1877 20.3808C20.3978 20.3391 20.6156 20.3605 20.8135 20.4425C21.0113 20.5245 21.1805 20.6632 21.2995 20.8413C21.4185 21.0194 21.482 21.2288 21.482 21.443C21.4817 21.7301 21.3675 22.0054 21.1645 22.2085C20.9614 22.4115 20.6861 22.5257 20.399 22.526Z" fill="currentColor"></path>
+                                            <path d="M25.584 4.357H8.645C8.50894 4.357 8.37846 4.41105 8.28225 4.50726C8.18605 4.60346 8.132 4.73394 8.132 4.87C8.132 5.00606 8.18605 5.13654 8.28225 5.23275C8.37846 5.32895 8.50894 5.383 8.645 5.383H25.584C25.603 5.38302 25.6218 5.38738 25.6389 5.39577C25.656 5.40416 25.671 5.41634 25.6827 5.43139C25.6944 5.44644 25.7024 5.46396 25.7063 5.48261C25.7102 5.50126 25.7097 5.52055 25.705 5.539L23.578 13.87C23.5711 13.897 23.5553 13.921 23.5332 13.938C23.5111 13.9551 23.4839 13.9642 23.456 13.964H8.269L5.088 1.505C5.05089 1.36034 4.96664 1.23217 4.84858 1.14072C4.73051 1.04927 4.58534 0.999761 4.436 1H1.513C1.37694 1 1.24646 1.05405 1.15025 1.15026C1.05405 1.24646 1 1.37694 1 1.513C1 1.64906 1.05405 1.77954 1.15025 1.87575C1.24646 1.97195 1.37694 2.026 1.513 2.026H4.162L8.035 17.2C8.12441 17.5511 8.32831 17.8624 8.61447 18.0846C8.90062 18.3068 9.25269 18.4273 9.615 18.427H23.68C23.8161 18.427 23.9465 18.373 24.0427 18.2767C24.139 18.1805 24.193 18.0501 24.193 17.914C24.193 17.7779 24.139 17.6475 24.0427 17.5513C23.9465 17.455 23.8161 17.401 23.68 17.401H9.615C9.48062 17.4016 9.34993 17.3571 9.24385 17.2746C9.13778 17.1921 9.06247 17.0764 9.03 16.946L8.53 14.995H23.456C23.7118 14.9952 23.9604 14.9102 24.1625 14.7533C24.3646 14.5965 24.5087 14.3768 24.572 14.129L26.7 5.794C26.7435 5.62397 26.7475 5.44626 26.7117 5.27445C26.6759 5.10263 26.6013 4.94127 26.4937 4.80271C26.386 4.66414 26.248 4.55203 26.0904 4.47495C25.9327 4.39788 25.7595 4.35687 25.584 4.357Z" stroke="currentColor" stroke-width="0.3"></path>
+                                            <path d="M11.27 19.334C10.8529 19.334 10.4451 19.4577 10.0983 19.6894C9.75149 19.9212 9.48117 20.2506 9.32155 20.636C9.16192 21.0213 9.12014 21.4454 9.20152 21.8545C9.2829 22.2636 9.48375 22.6394 9.7787 22.9343C10.0736 23.2293 10.4495 23.4301 10.8586 23.5115C11.2677 23.5928 11.6917 23.5511 12.0771 23.3915C12.4624 23.2318 12.7918 22.9616 13.0236 22.6147C13.2553 22.2679 13.379 21.8601 13.379 21.443C13.3785 20.8838 13.1561 20.3477 12.7607 19.9523C12.3653 19.5569 11.8292 19.3345 11.27 19.334ZM11.27 22.526C11.0558 22.526 10.8464 22.4625 10.6683 22.3435C10.4902 22.2245 10.3514 22.0553 10.2694 21.8574C10.1875 21.6595 10.166 21.4418 10.2078 21.2317C10.2496 21.0216 10.3527 20.8287 10.5042 20.6772C10.6557 20.5258 10.8486 20.4226 11.0587 20.3808C11.2688 20.3391 11.4865 20.3605 11.6844 20.4425C11.8823 20.5245 12.0515 20.6632 12.1705 20.8413C12.2895 21.0194 12.353 21.2288 12.353 21.443C12.3527 21.7301 12.2385 22.0054 12.0355 22.2085C11.8325 22.4115 11.5571 22.5257 11.27 22.526Z" stroke="currentColor" stroke-width="0.3"></path>
+                                            <path d="M20.399 19.334C19.9818 19.334 19.5741 19.4577 19.2273 19.6894C18.8805 19.9212 18.6102 20.2506 18.4505 20.636C18.2909 21.0213 18.2491 21.4454 18.3305 21.8545C18.4119 22.2636 18.6127 22.6394 18.9077 22.9343C19.2026 23.2293 19.5784 23.4301 19.9875 23.5115C20.3966 23.5928 20.8207 23.5511 21.206 23.3915C21.5914 23.2318 21.9208 22.9616 22.1526 22.6147C22.3843 22.2679 22.508 21.8601 22.508 21.443C22.5074 20.8838 22.2851 20.3477 21.8897 19.9523C21.4943 19.5569 20.9581 19.3345 20.399 19.334ZM20.399 22.526C20.1848 22.526 19.9754 22.4625 19.7973 22.3435C19.6192 22.2245 19.4804 22.0553 19.3984 21.8574C19.3164 21.6595 19.295 21.4418 19.3368 21.2317C19.3786 21.0216 19.4817 20.8287 19.6332 20.6772C19.7846 20.5258 19.9776 20.4226 20.1877 20.3808C20.3978 20.3391 20.6156 20.3605 20.8135 20.4425C21.0113 20.5245 21.1805 20.6632 21.2995 20.8413C21.4185 21.0194 21.482 21.2288 21.482 21.443C21.4817 21.7301 21.3675 22.0054 21.1645 22.2085C20.9614 22.4115 20.6861 22.5257 20.399 22.526Z" stroke="currentColor" stroke-width="0.3"></path>
+                                            </svg>                                    
+                </a>
+                <a href="#" class="icon icon-user">
+                  <svg id="Group_12658" data-name="Group 12658" xmlns="http://www.w3.org/2000/svg" width="19.27" height="20.968" viewBox="0 0 19.27 20.968">
+                    <g id="Group_12659" data-name="Group 12659" transform="translate(0 0)">
+                      <path id="Path_20712" data-name="Path 20712" d="M19.267,20.188a9.685,9.685,0,0,0-6.78-8.316,6.278,6.278,0,1,0-5.7,0A9.685,9.685,0,0,0,0,20.188a.711.711,0,0,0,1.415.136,8.166,8.166,0,0,1,.61-2.416,8.26,8.26,0,0,1,15.213,0,8.166,8.166,0,0,1,.61,2.416.711.711,0,0,0,1.415-.136M9.635,11.134A4.858,4.858,0,0,1,7.745,1.8a4.858,4.858,0,0,1,3.78,8.95,4.824,4.824,0,0,1-1.89.381" transform="translate(0 0.001)" fill="currentColor"></path>
+                    </g>
+                  </svg>
+                      
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-contant" aria-controls="navbar-contant" aria-expanded="false" aria-label="Toggle navigation">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21.496" height="16" viewBox="0 0 21.496 16">
+                    <g id="Menubar" transform="translate(-375.252 -31.672)">
+                      <line id="Line_215" data-name="Line 215" x2="19.496" transform="translate(376.252 32.672)" fill="none" stroke="#ed6e1f" stroke-linecap="round" stroke-width="2"/>
+                      <line id="Line_216" data-name="Line 216" x2="19.496" transform="translate(376.252 39.672)" fill="none" stroke="#ed6e1f" stroke-linecap="round" stroke-width="2"/>
+                      <line id="Line_217" data-name="Line 217" x2="19.496" transform="translate(376.252 46.672)" fill="none" stroke="#ed6e1f" stroke-linecap="round" stroke-width="2"/>
+                    </g>
+                  </svg>
+                </button>
+                </div>
+
                   <div class="collapse navbar-collapse flex-wrap" id="navbar-contant">
-                    <div class="header-btns d-flex justify-content-end gap-3 col-12">
+                    <div class="header-btns d-flex justify-content-lg-end gap-3 col-12">
                         <a href="" class="btn btn-orange-outline py-2 text-uppercase">CHECK AVAILABLE BREEDS</a>
                         <a href="" class="btn text-uppercase">Contact Us</a>
                     </div>
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav ms-lg-auto mb-2 mb-lg-0 mt-3 mt-lg-0">
                       <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                       </li>
@@ -39,23 +67,39 @@
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Ducks
                         </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+                        <div class="dropdown-menu">
+                          <ul class="inner-dropdown">
+                            <li class="d-lg-block d-none"><h6 class="dropdown-heading mb-0 ">Ducks</h6></li>
+                            <li class="d-lg-block d-none"><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">
+                              <span>SHOP BY AVAILABILITY</span>
+                              <span class="dropdown-child">Shop each breed with picture. Filter through availability, sex, breed, etc.</span>
+                            </a></li>
+                            <li><a class="dropdown-item" href="#">SHOP BY BREED</a></li>
+                            <li><a class="dropdown-item" href="#">SHOP PACKAGES</a></li>
+                            <li><a class="dropdown-item" href="#">COMPARE DUCKS</a></li>
+                            <li><a class="dropdown-item" href="#">INTRODUCTION TO DUCKS</a></li>
+                          </ul>
+                      </div>
                       </li>
                       <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             geese
                         </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+                        <div class="dropdown-menu">
+                          <ul class="inner-dropdown">
+                            <li class="d-lg-block d-none"><h6 class="dropdown-heading mb-0 ">Geese</h6></li>
+                            <li class="d-lg-block d-none"><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">
+                              <span>SHOP BY AVAILABILITY</span>
+                              <span class="dropdown-child">Shop each breed with picture. Filter through availability, sex, breed, etc.</span>
+                            </a></li>
+                            <li><a class="dropdown-item" href="#">SHOP BY BREED</a></li>
+                            <li><a class="dropdown-item" href="#">SHOP PACKAGES</a></li>
+                            <li><a class="dropdown-item" href="#">COMPARE DUCKS</a></li>
+                            <li><a class="dropdown-item" href="#">INTRODUCTION TO DUCKS</a></li>
+                          </ul>
+                      </div>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="#">Chickens</a>
@@ -75,7 +119,7 @@
                       
                     </ul>
                     
-                    <div class="header-icons d-flex gap-3">
+                    <div class="header-icons d-lg-flex d-none gap-3">
                         <a href="#">
                             <svg width="27" height="24" viewBox="0 0 27 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M25.584 4.357H8.645C8.50894 4.357 8.37846 4.41105 8.28225 4.50726C8.18605 4.60346 8.132 4.73394 8.132 4.87C8.132 5.00606 8.18605 5.13654 8.28225 5.23275C8.37846 5.32895 8.50894 5.383 8.645 5.383H25.584C25.603 5.38302 25.6218 5.38738 25.6389 5.39577C25.656 5.40416 25.671 5.41634 25.6827 5.43139C25.6944 5.44644 25.7024 5.46396 25.7063 5.48261C25.7102 5.50126 25.7097 5.52055 25.705 5.539L23.578 13.87C23.5711 13.897 23.5553 13.921 23.5332 13.938C23.5111 13.9551 23.4839 13.9642 23.456 13.964H8.269L5.088 1.505C5.05089 1.36034 4.96664 1.23217 4.84858 1.14072C4.73051 1.04927 4.58534 0.999761 4.436 1H1.513C1.37694 1 1.24646 1.05405 1.15025 1.15026C1.05405 1.24646 1 1.37694 1 1.513C1 1.64906 1.05405 1.77954 1.15025 1.87575C1.24646 1.97195 1.37694 2.026 1.513 2.026H4.162L8.035 17.2C8.12441 17.5511 8.32831 17.8624 8.61447 18.0846C8.90062 18.3068 9.25269 18.4273 9.615 18.427H23.68C23.8161 18.427 23.9465 18.373 24.0427 18.2767C24.139 18.1805 24.193 18.0501 24.193 17.914C24.193 17.7779 24.139 17.6475 24.0427 17.5513C23.9465 17.455 23.8161 17.401 23.68 17.401H9.615C9.48062 17.4016 9.34993 17.3571 9.24385 17.2746C9.13778 17.1921 9.06247 17.0764 9.03 16.946L8.53 14.995H23.456C23.7118 14.9952 23.9604 14.9102 24.1625 14.7533C24.3646 14.5965 24.5087 14.3768 24.572 14.129L26.7 5.794C26.7435 5.62397 26.7475 5.44626 26.7117 5.27445C26.6759 5.10263 26.6013 4.94127 26.4937 4.80271C26.386 4.66414 26.248 4.55203 26.0904 4.47495C25.9327 4.39788 25.7595 4.35687 25.584 4.357Z" fill="#E3B154"/>
@@ -84,8 +128,7 @@
                                 <path d="M25.584 4.357H8.645C8.50894 4.357 8.37846 4.41105 8.28225 4.50726C8.18605 4.60346 8.132 4.73394 8.132 4.87C8.132 5.00606 8.18605 5.13654 8.28225 5.23275C8.37846 5.32895 8.50894 5.383 8.645 5.383H25.584C25.603 5.38302 25.6218 5.38738 25.6389 5.39577C25.656 5.40416 25.671 5.41634 25.6827 5.43139C25.6944 5.44644 25.7024 5.46396 25.7063 5.48261C25.7102 5.50126 25.7097 5.52055 25.705 5.539L23.578 13.87C23.5711 13.897 23.5553 13.921 23.5332 13.938C23.5111 13.9551 23.4839 13.9642 23.456 13.964H8.269L5.088 1.505C5.05089 1.36034 4.96664 1.23217 4.84858 1.14072C4.73051 1.04927 4.58534 0.999761 4.436 1H1.513C1.37694 1 1.24646 1.05405 1.15025 1.15026C1.05405 1.24646 1 1.37694 1 1.513C1 1.64906 1.05405 1.77954 1.15025 1.87575C1.24646 1.97195 1.37694 2.026 1.513 2.026H4.162L8.035 17.2C8.12441 17.5511 8.32831 17.8624 8.61447 18.0846C8.90062 18.3068 9.25269 18.4273 9.615 18.427H23.68C23.8161 18.427 23.9465 18.373 24.0427 18.2767C24.139 18.1805 24.193 18.0501 24.193 17.914C24.193 17.7779 24.139 17.6475 24.0427 17.5513C23.9465 17.455 23.8161 17.401 23.68 17.401H9.615C9.48062 17.4016 9.34993 17.3571 9.24385 17.2746C9.13778 17.1921 9.06247 17.0764 9.03 16.946L8.53 14.995H23.456C23.7118 14.9952 23.9604 14.9102 24.1625 14.7533C24.3646 14.5965 24.5087 14.3768 24.572 14.129L26.7 5.794C26.7435 5.62397 26.7475 5.44626 26.7117 5.27445C26.6759 5.10263 26.6013 4.94127 26.4937 4.80271C26.386 4.66414 26.248 4.55203 26.0904 4.47495C25.9327 4.39788 25.7595 4.35687 25.584 4.357Z" stroke="#E3B154" stroke-width="0.3"/>
                                 <path d="M11.27 19.334C10.8529 19.334 10.4451 19.4577 10.0983 19.6894C9.75149 19.9212 9.48117 20.2506 9.32155 20.636C9.16192 21.0213 9.12014 21.4454 9.20152 21.8545C9.2829 22.2636 9.48375 22.6394 9.7787 22.9343C10.0736 23.2293 10.4495 23.4301 10.8586 23.5115C11.2677 23.5928 11.6917 23.5511 12.0771 23.3915C12.4624 23.2318 12.7918 22.9616 13.0236 22.6147C13.2553 22.2679 13.379 21.8601 13.379 21.443C13.3785 20.8838 13.1561 20.3477 12.7607 19.9523C12.3653 19.5569 11.8292 19.3345 11.27 19.334ZM11.27 22.526C11.0558 22.526 10.8464 22.4625 10.6683 22.3435C10.4902 22.2245 10.3514 22.0553 10.2694 21.8574C10.1875 21.6595 10.166 21.4418 10.2078 21.2317C10.2496 21.0216 10.3527 20.8287 10.5042 20.6772C10.6557 20.5258 10.8486 20.4226 11.0587 20.3808C11.2688 20.3391 11.4865 20.3605 11.6844 20.4425C11.8823 20.5245 12.0515 20.6632 12.1705 20.8413C12.2895 21.0194 12.353 21.2288 12.353 21.443C12.3527 21.7301 12.2385 22.0054 12.0355 22.2085C11.8325 22.4115 11.5571 22.5257 11.27 22.526Z" stroke="#E3B154" stroke-width="0.3"/>
                                 <path d="M20.399 19.334C19.9818 19.334 19.5741 19.4577 19.2273 19.6894C18.8805 19.9212 18.6102 20.2506 18.4505 20.636C18.2909 21.0213 18.2491 21.4454 18.3305 21.8545C18.4119 22.2636 18.6127 22.6394 18.9077 22.9343C19.2026 23.2293 19.5784 23.4301 19.9875 23.5115C20.3966 23.5928 20.8207 23.5511 21.206 23.3915C21.5914 23.2318 21.9208 22.9616 22.1526 22.6147C22.3843 22.2679 22.508 21.8601 22.508 21.443C22.5074 20.8838 22.2851 20.3477 21.8897 19.9523C21.4943 19.5569 20.9581 19.3345 20.399 19.334ZM20.399 22.526C20.1848 22.526 19.9754 22.4625 19.7973 22.3435C19.6192 22.2245 19.4804 22.0553 19.3984 21.8574C19.3164 21.6595 19.295 21.4418 19.3368 21.2317C19.3786 21.0216 19.4817 20.8287 19.6332 20.6772C19.7846 20.5258 19.9776 20.4226 20.1877 20.3808C20.3978 20.3391 20.6156 20.3605 20.8135 20.4425C21.0113 20.5245 21.1805 20.6632 21.2995 20.8413C21.4185 21.0194 21.482 21.2288 21.482 21.443C21.4817 21.7301 21.3675 22.0054 21.1645 22.2085C20.9614 22.4115 20.6861 22.5257 20.399 22.526Z" stroke="#E3B154" stroke-width="0.3"/>
-                                </svg>                                
-                              
+                                </svg>                                     
                         </a>
                         <a href="#">
                             <svg id="Group_12658" data-name="Group 12658" xmlns="http://www.w3.org/2000/svg" width="19.27" height="20.968" viewBox="0 0 19.27 20.968">
@@ -145,9 +188,9 @@
                 </div><!-- Slide 2 -->
                 </div>
                 <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
+                <div class="swiper-pagination d-md-none d-flex"></div>
             
-                <div class="home-slider-nav">
+                <div class="home-slider-nav d-md-block d-none">
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
                 </div>
@@ -171,14 +214,14 @@
 
             <section class="image-boxes with-border">
                 <div class="container">
-                    <div class="row">
+                    <div class="row gap-md-0 gap-5">
                         <div class="col-12 col-md-4">
                             <div class="image-box text-center">
                                 <img src="assets/duck.jpg" />
                                 <div class="image-box-content">
                                     <h3 class="h6">SHOP DUCKS</h3>
                                     <p>Explore duck breeds based on availability, sex, and price.</p>
-                                    <a href="#" class="btn btn-green d-block">Shop Ducks</a>
+                                    <a href="#" class="btn btn-green d-block mx-auto mx-md-0">Shop Ducks</a>
                                 </div>
                             </div>
                         </div>
@@ -188,7 +231,7 @@
                                 <div class="image-box-content">
                                     <h3 class="h6">SHOP GEESE</h3>
                                     <p>Explore geese breeds based on availability, sex, and price.</p>
-                                    <a href="#" class="btn btn-green d-block">Shop Ducks</a>
+                                    <a href="#" class="btn btn-green d-block mx-auto mx-md-0">Shop Ducks</a>
                                 </div>
                             </div>
                         </div>
@@ -198,7 +241,7 @@
                                 <div class="image-box-content">
                                     <h3 class="h6">VIEW AVAILABLE BREEDS</h3>
                                     <p>Shop based on our breed calendar or reserve for a future date.</p>
-                                    <a href="#" class="btn btn-green d-block">Shop Ducks</a>
+                                    <a href="#" class="btn btn-green d-block mx-auto mx-md-0">Shop Ducks</a>
                                 </div>
                             </div>
                         </div>
@@ -209,7 +252,7 @@
 
             <section class="image-with-text-box">
               <div class="container">
-                <div class="row align-items-center">
+                <div class="row align-items-center gap-4 gap-md-0">
                   <div class="col-12 col-md-6 ps-md-0">
                     <div class="position-relative media-box">
                       <img src="assets/Ducks_group.jpg" class="media" />
@@ -221,12 +264,12 @@
                       <h2 class="h3">Welcome to Metzer Farms</h2>
                       <h5 class="h6 subtitle">We are a family-owned farm and hatchery that has been in business since 1972.</h5>
                       <p>We have mastered nutrition, breeding, selection, incubation, and hatching to ensure our customers receive the highest quality of day-old birds. We specialize in waterfowl, hatching 19 breeds of ducks and 16 breeds of geese. We also hatch French Pearl Guineas and Ringneck Pheasants, as well as three strains of meat chickens.</p>
-                      <a href="#" class="btn btn-primary d-block">Learn More</a>
+                      <a href="#" class="btn btn-primary d-block mx-auto mx-md-0">Learn More</a>
                     </div>
                     
                   </div>
                 </div>
-                <div class="row flex-md-row-reverse align-items-center">
+                <div class="row flex-md-row-reverse gap-4 gap-md-0 align-items-center">
                   <div class="col-12 col-md-6 pe-md-0">
                     <div class="media-box">
                       <img src="assets/DuckGroup_2.jpg" class="media" />
@@ -238,7 +281,7 @@
                     <p>At Metzer Farms, we believe in more than just providing top-quality ducks and geese; we’re dedicated to ensuring your experience with us is as delightful and rewarding as the company of our waterfowl. Our friendly customer service team is here to help with every step—from choosing the perfect breeds to offering expert care advice.</p>
 
                     <p>Your satisfaction and the well-being of your feathered friends are our top priorities. Reach out to us; we’re excited to be a part of your waterfowl journey!</p>
-                    <a href="#" class="btn btn-primary d-block">Customer Service</a>
+                    <a href="#" class="btn btn-primary d-block mx-auto mx-md-0">Customer Service</a>
                     </div>
                     
                   </div>
@@ -294,7 +337,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="swiper-button swiper-button-next">
+                  <div class="swiper-button swiper-button-next d-none d-md-flex">
                     <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 47 47">
                       <g id="Group_12964" data-name="Group 12964" transform="translate(-1238 -2773)">
                         <rect id="Rectangle_5387" data-name="Rectangle 5387" width="47" height="47" rx="23.5" transform="translate(1238 2773)" fill="#ed6e1f"/>
@@ -313,7 +356,7 @@
                       </g>
                     </svg>
                   </div>
-                  <div class="swiper-button swiper-button-prev">
+                  <div class="swiper-button swiper-button-prev d-none d-md-flex">
                     <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 47 47">
                       <g id="Group_12963" data-name="Group 12963" transform="translate(-140 -2773)">
                         <rect id="Rectangle_5535" data-name="Rectangle 5535" width="47" height="47" rx="23.5" transform="translate(140 2773)" fill="#ed6e1f"/>
@@ -338,11 +381,11 @@
               </div>
             </section><!-- TESTIMONIAL SECTION -->
 
-            <section class="richtext-icon-box text-center">
+            <section class="richtext-icon-box text-start text-md-center">
               <div class="container">
                 <h2 class="h3">Your Guide to Raising Waterfowl</h2>
                 <p class="w-75 mx-auto">Diving into the world of ducks and geese can be both exciting and overwhelming. But worry not! Whether you’re dreaming of your first fluffy duckling or are curious about the serene grace of geese, we’ve got you covered. Our beginner’s guide is packed with essential tips, from selecting the right breeds to understanding their care needs.</p>
-                <ul class="icon_list">
+                <ul class="icon_list d-flex p-0">
                   <li class="list-item">
                     <div class="frame">
                       <h4 class="h2 my-0">1</h4>
@@ -375,20 +418,20 @@
                     <p class="h5">…and more</p>
                   </li>
                 </ul>
-                <a href="#" class="btn btn-primary">View the Guide</a>
+                <a href="#" class="btn btn-primary d-block mx-auto  mx-md-auto">View the Guide</a>
               </div>
             </section><!-- RICHTEXT WITH ICON LIST -->
 
             <section class="image-boxes">
               <div class="container">
-                  <div class="row">
+                  <div class="row image-box-containers">
                       <div class="col-12 col-md-4">
                           <div class="image-box text-center">
                               <img src="assets/image-box.jpg" />
                               <div class="image-box-content">
                                   <h3 class="h6 text-uppercase">Ducks as Pets</h3>
                                   <p>Explore duck breeds based on availability, sex, and price.</p>
-                                  <a href="#" class="btn btn-green d-block">Shop Ducks</a>
+                                  <a href="#" class="btn btn-green d-block mx-auto  mx-md-0">View Blog Post</a>
                               </div>
                           </div>
                       </div>
@@ -398,7 +441,7 @@
                               <div class="image-box-content">
                                   <h3 class="h6 text-uppercase">Tips for keeping your coop safe from predators</h3>
                                   <p>Explore geese breeds based on availability, sex, and price.</p>
-                                  <a href="#" class="btn btn-green d-block">Shop Ducks</a>
+                                  <a href="#" class="btn btn-green d-block mx-auto  mx-md-0">View Blog Post</a>
                               </div>
                           </div>
                       </div>
@@ -408,7 +451,7 @@
                               <div class="image-box-content">
                                   <h3 class="h6 text-uppercase">Keeping your ducks cool during a heat wave</h3>
                                   <p>Shop based on our breed calendar or reserve for a future date.</p>
-                                  <a href="#" class="btn btn-green d-block">Shop Ducks</a>
+                                  <a href="#" class="btn btn-green d-block mx-auto  mx-md-0">View Blog Post</a>
                               </div>
                           </div>
                       </div>
@@ -417,31 +460,31 @@
               </div>
           </section><!-- IMAGE BOXES-->
           <section class="gallery">
-            <div class="gallery-slider swiper">
+            <div class="gallery-slider d-md-block d-none swiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide slide-1">
                   <img src="assets/gallery1.jpg" class="banner" />
                 </div>
                 <div class="swiper-slide slide-2">
-                  <img src="assets/gallery1.jpg" class="banner" />
+                  <img src="assets/gallery2.jpg" class="banner" />
                 </div>
                 <div class="swiper-slide slide-3">
-                  <img src="assets/gallery1.jpg" class="banner" />
+                  <img src="assets/gallery3.jpg" class="banner" />
                 </div>
                 <div class="swiper-slide slide-4">
-                  <img src="assets/gallery1.jpg" class="banner" />
+                  <img src="assets/gallery4.jpg" class="banner" />
                 </div>
                 <div class="swiper-slide slide-5">
-                  <img src="assets/gallery1.jpg" class="banner" />
+                  <img src="assets/gallery5.jpg" class="banner" />
                 </div>
                 <div class="swiper-slide slide-6">
-                  <img src="assets/gallery1.jpg" class="banner" />
+                  <img src="assets/gallery6.jpg" class="banner" />
                 </div>
                 <div class="swiper-slide slide-7">
-                  <img src="assets/gallery1.jpg" class="banner" />
+                  <img src="assets/gallery7.jpg" class="banner" />
                 </div>
                 <div class="swiper-slide slide-8">
-                  <img src="assets/gallery1.jpg" class="banner" />
+                  <img src="assets/gallery8.jpg" class="banner" />
                 </div>
               </div>
               <div class="swiper-button swiper-button-next">
@@ -509,7 +552,7 @@
               </div>
             </div>
           </section><!-- GALLERY SLIDER -->
-
+<!-- 
             <h1>Happy Ducks Across the Nation</h1>
             <h2>Happy Ducks Across the Nation</h2>
             <h3>Happy Ducks Across the Nation</h3>
@@ -520,10 +563,63 @@
             <a href="" class="btn btn-primary">Primary Button</a>
             <a href="" class="btn btn-green">Primary Button</a>
             <a href="" class="btn btn-orange-outline">Secondary Button</a>
-            <a href="" class="btn btn-green btn-green-outline">Secondary Button</a>
+            <a href="" class="btn btn-green btn-green-outline">Secondary Button</a> -->
         </main><!-- MAIN-->
-        <footer>
-
+        <footer class="site-footer">
+          <div class="container">
+            <div class="footer-main d-lg-flex d-block">
+              <img src="assets/Footerlogo.png" alt="" width="300" class="logo">
+              <ul class="menu-list d-flex mt-5 mt-lg-4">
+                <li class="list-item link-item--1">
+                  <a href="#" class="link">ABOUT METZER FARMS</a>
+                  <a href="#" class="link">CATALOG</a>
+                  <a href="#" class="link">CONTACT US</a>
+                </li>
+                <li class="list-item link-item--2">
+                  <a href="#" class="link">NEWSLETTER</a>
+                  <a href="#" class="link">BLOG</a>
+                </li>
+                <li class="d-block d-md-none">
+                  <hr class="footer-divider">
+                </li>
+                <li class="list-item link-item--3 mt-4 mt-md-0 text-md-end">
+                  <p class="mb-2"><strong>CONTACT</strong></p>
+                  <p class="mb-2">contact@metzerfarms</p>
+                  <p class="mb-2"><strong>1 (800) 424-7755 </strong></p>
+                  <div class="social-link d-flex justify-content-lg-end mt-md-5 mt-4">
+                    <a href="#" class="icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="13.785" height="25.934" viewBox="0 0 13.785 25.934">
+                        <path id="Path_20980" data-name="Path 20980" d="M207.166,143.142l.714-4.658h-4.469v-3.023a2.329,2.329,0,0,1,2.626-2.516h2.032v-3.966a24.778,24.778,0,0,0-3.607-.315c-3.681,0-6.087,2.231-6.087,6.269v3.55h-4.091v4.658h4.091V154.4a16.283,16.283,0,0,0,5.036,0v-11.26Z" transform="translate(-194.284 -128.664)" fill="#fff"/>
+                      </svg>
+                    </a>
+                    <a href="#" class="icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="19.168" height="19.167" viewBox="0 0 19.168 19.167">
+                        <g id="Group_13373" data-name="Group 13373" transform="translate(-1262.679 -6884.545)">
+                          <path id="Path_20977" data-name="Path 20977" d="M1197.3,234.256a4.72,4.72,0,1,0,4.72,4.72,4.726,4.726,0,0,0-4.72-4.72m0,7.744a3.024,3.024,0,1,1,3.024-3.024A3.027,3.027,0,0,1,1197.3,242" transform="translate(75.045 6655.152)" fill="#fff"/>
+                          <path id="Path_20978" data-name="Path 20978" d="M1106.411,155.433h-7.653a5.764,5.764,0,0,1-5.757-5.757v-7.653a5.764,5.764,0,0,1,5.757-5.757h7.653a5.764,5.764,0,0,1,5.758,5.757v7.653a5.764,5.764,0,0,1-5.758,5.757m-7.653-17.365a3.958,3.958,0,0,0-3.954,3.954v7.653a3.958,3.958,0,0,0,3.954,3.954h7.653a3.959,3.959,0,0,0,3.954-3.954v-7.653a3.959,3.959,0,0,0-3.954-3.954Z" transform="translate(169.678 6748.28)" fill="#fff"/>
+                        </g>
+                      </svg>
+                    </a>
+                    <a href="#" class="icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Group_13064" data-name="Group 13064" width="17.146" height="19.694" viewBox="0 0 17.146 19.694">
+                        <defs>
+                          <clipPath id="clip-path">
+                            <rect id="Rectangle_5861" data-name="Rectangle 5861" width="17.146" height="19.694" fill="#fff"/>
+                          </clipPath>
+                        </defs>
+                        <g id="Group_13063" data-name="Group 13063" clip-path="url(#clip-path)">
+                          <path id="Path_21023" data-name="Path 21023" d="M17.147,4.747V8.066A8.083,8.083,0,0,1,12.5,6.52v6.923A6.251,6.251,0,1,1,6.215,7.192a6.315,6.315,0,0,1,.857.053l0,3.443A2.866,2.866,0,1,0,9.1,13.611l.006-.152V0H12.5s-.171,4.167,4.645,4.747" transform="translate(0)" fill="#fff"/>
+                        </g>
+                      </svg>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-copyright pt-md-4">
+              <p>©2024 Metzer Farms. All Rights Reserved   |   <a href="#" >Our Privacy Policy</a>   |   <a href="#" >Terms and Conditions</a></p>
+            </div>
+          </div>
         </footer><!-- FOOTER-->
 
     </div>
@@ -534,6 +630,10 @@
           navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
           },
         });
 
@@ -553,9 +653,30 @@
 
         var galleryThumbs = new Swiper(".gallery-thumbnails", {
           spaceBetween: 10,
-          slidesPerView: 7,
+          slidesPerView: 1.4,
           freeMode: true,
+          loop: true,
+          centeredSlides: true,
           watchSlidesProgress: true,
+          breakpoints: {
+            640: {
+              slidesPerView: 2.5,
+              spaceBetween: 10,
+              centeredSlides: true,
+            },
+            768: {
+              slidesPerView: 4.5,
+              spaceBetween: 10,
+              centeredSlides: false,
+              loop: false
+            },
+            1024: {
+              slidesPerView: 7,
+              spaceBetween: 10,
+              centeredSlides: false,
+              loop: false
+            },
+          },
         }); 
         var galleryMain = new Swiper(".gallery-slider", {
           spaceBetween: 10,
